@@ -1,0 +1,30 @@
+& when (@media-common = true) {
+    .cards-grid {
+        display: inline-block;
+        width: 100%;
+
+
+        ul {
+            list-style: none;
+            padding-inline-start: 0;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                float: left;
+            }
+        }        
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extum, @break) when (@extum = 'max') and (@break = @screen__m) {
+}
+
+
+// Desktop
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    
+}

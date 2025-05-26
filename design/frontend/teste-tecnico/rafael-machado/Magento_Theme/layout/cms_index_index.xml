@@ -1,0 +1,10 @@
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main.content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.home.slider" before="-" template="Magento_Theme::html/banner-slider.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="howitworks" after="custom.home.slider" template="Magento_Theme::html/how-it-works.phtml" />
+            <block class="RafaelMachado\ProductsDisplay\Block\LatestProducts" name="home.latest.products" after="howitworks" template="Magento_Theme::html/latest-products.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="card.grid" after="home.latest.products" template="Magento_Theme::html/card-grid.phtml" />
+        </referenceContainer>
+    </body>
+</page>

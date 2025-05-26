@@ -1,0 +1,46 @@
+& when (@media-common = true) {
+    .how-it-works {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background-color: #fffff5;
+
+        h2 {
+            font-weight: 700;
+        }
+
+
+        ul {
+            list-style: none;
+            padding-inline-start: 0;
+            display: flex;
+            justify-content: center;
+
+            li {
+                float: left;
+                width: 160px;
+                margin: 0 15px;
+
+                h3 {
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }        
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extum, @break) when (@extum = 'max') and (@break = @screen__m) {
+}
+
+
+// Desktop
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    
+}
